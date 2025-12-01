@@ -1,0 +1,38 @@
+Patients (
+    UR_Number        PK,
+    Name,
+    Address,
+    Age,
+    Email,
+    Phone,
+    Medicare card number,
+    DoctorID FK
+)
+Doctors (
+    DoctorID        PK,
+    Name,
+    Phone,
+    Specialty,
+    Years_of_Experience,
+    Email
+)
+Pharmaceutical Companies (
+    CompanyName     PK,
+    Address,
+    PhoneNumber
+)
+Drugs (
+   
+    TradeName ,
+    Strength,
+    CompanyName     FK 
+)
+Prescriptions (
+   
+     UR Number       FK,
+    DoctorID        FK ,
+    DrugID          FK ,
+    Date ,
+    Quantity
+)
+
